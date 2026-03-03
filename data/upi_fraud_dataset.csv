@@ -1,0 +1,151 @@
+transaction_id,user_id,amount,merchant_name,timestamp,hour_of_day,user_age,payment_source,is_malicious_link,ip_country,gps_country,is_rooted,is_emulator,mock_location_enabled,pin_entry_time_ms,input_method,is_on_call_during_transaction,sender_bank,is_fraud,fraud_type
+TXN0127,user_043,297.29,MakeMyTrip,2025-12-23 02:33:58,2,25,link,0,India,India,0,0,0,2719,keyboard,0,HDFC,0,none
+TXN0013,user_003,1830.82,Urban Ladder,2025-12-23 05:57:58,5,49,qr_scan,0,India,India,0,0,0,2136,keyboard,0,HDFC,0,none
+TXN0069,user_022,223.29,Pantaloons,2025-12-23 08:07:58,8,45,qr_scan,0,India,India,0,0,0,2034,keyboard,0,SBI,0,none
+TXN0049,user_031,3899.3,Shoppers Stop,2025-12-23 08:58:58,8,64,direct_upi,0,India,India,0,0,0,2458,keyboard,0,HDFC,0,none
+TXN0144,user_009,2221.39,Shoppers Stop,2025-12-24 02:38:58,2,64,link,0,India,India,0,0,0,1837,keyboard,0,HDFC,0,none
+TXN0093,user_005,919.9,Shoppers Stop,2025-12-24 05:46:58,5,26,qr_scan,0,India,India,0,0,0,2765,keyboard,0,SBI,0,none
+TXN0121,user_035,54.88,BigBazaar,2025-12-24 09:15:58,9,82,qr_scan,0,India,India,0,0,0,2188,keyboard,0,HDFC,0,none
+TXN0083,user_032,1040.29,More Supermarket,2025-12-24 16:12:58,16,45,direct_upi,0,India,India,0,0,0,1910,keyboard,0,HDFC,0,none
+TXN0057,user_042,385.92,Spencer,2025-12-24 22:25:58,22,41,qr_scan,0,India,India,0,0,0,1663,keyboard,0,HDFC,0,none
+TXN0089,user_036,85.31,Swiggy,2025-12-24 22:46:58,22,59,qr_scan,0,India,India,0,0,0,2562,keyboard,0,SBI,0,none
+TXN0029,user_028,2969.61,Myntra,2025-12-25 00:18:58,0,35,direct_upi,0,India,India,0,0,0,1855,keyboard,0,SBI,0,none
+TXN0122,user_048,193.69,Apollo Pharmacy,2025-12-25 10:03:58,10,41,direct_upi,0,India,India,0,0,0,1805,keyboard,0,SBI,0,none
+TXN0073,user_002,283.25,KFC,2025-12-25 10:54:58,10,73,qr_scan,0,India,India,0,0,0,2098,keyboard,0,SBI,0,none
+TXN0001,user_012,1909.25,BigBazaar,2025-12-25 11:14:58,11,75,direct_upi,0,India,India,0,0,0,2081,keyboard,0,SBI,0,none
+TXN0010,user_017,102.14,Apollo Pharmacy,2025-12-25 19:32:58,19,45,direct_upi,0,India,India,0,0,0,1918,keyboard,0,SBI,0,none
+TXN0059,user_043,215.47,McDonalds,2025-12-26 03:12:58,3,25,qr_scan,0,India,India,0,0,0,2124,keyboard,0,SBI,0,none
+TXN0018,user_043,278.86,Urban Ladder,2025-12-26 03:58:58,3,25,qr_scan,0,India,India,0,0,0,2432,keyboard,0,HDFC,0,none
+TXN0094,user_029,1331.53,Lifestyle,2025-12-26 11:05:58,11,26,qr_scan,0,India,India,0,0,0,2424,keyboard,0,SBI,0,none
+TXN0135,user_047,87.58,Croma,2025-12-27 05:41:58,5,33,qr_scan,0,India,India,0,0,0,2450,keyboard,0,HDFC,0,none
+TXN0126,user_038,636.81,MakeMyTrip,2025-12-27 06:50:58,6,27,direct_upi,0,India,India,0,0,0,2541,keyboard,0,SBI,0,none
+TXN0136,user_013,1136.33,Bata,2025-12-27 07:26:58,7,49,direct_upi,0,India,India,0,0,0,2349,keyboard,0,SBI,0,none
+TXN0046,user_009,2773.82,FirstCry,2025-12-27 09:50:58,9,64,direct_upi,0,India,India,0,0,0,2038,keyboard,0,HDFC,0,none
+TXN0125,user_011,1628.56,Kalyan Jewellers,2025-12-27 23:41:58,23,35,direct_upi,0,India,India,0,0,0,2093,keyboard,0,SBI,0,none
+TXN0025,user_017,99.52,PVR Cinemas,2025-12-28 09:13:58,9,45,qr_scan,0,India,India,0,0,0,2489,keyboard,0,SBI,0,none
+TXN0066,user_028,4744.59,Woodland,2025-12-28 10:22:58,10,35,link,0,India,India,0,0,0,2153,keyboard,0,SBI,0,none
+TXN0110,user_025,606.78,Tanishq,2025-12-28 19:34:58,19,30,qr_scan,0,India,India,0,0,0,1879,keyboard,0,HDFC,0,none
+TXN0054,user_021,507.59,Pantaloons,2025-12-28 20:05:58,20,49,qr_scan,0,India,India,0,0,0,2376,keyboard,0,SBI,0,none
+TXN0150,user_043,258.66,More Supermarket,2025-12-28 23:17:58,23,25,qr_scan,0,India,India,0,0,0,1643,keyboard,0,HDFC,0,none
+TXN0088,user_041,407.83,FabIndia,2025-12-29 02:52:58,2,37,qr_scan,0,India,India,0,0,0,2091,keyboard,0,HDFC,0,none
+TXN0062,user_046,13618.19,Prize Winner,2025-12-29 06:40:58,6,51,link,1,India,India,0,0,0,2417,keyboard,0,HDFC,1,high_amount
+TXN0022,user_015,1807.19,MakeMyTrip,2025-12-29 08:28:58,8,39,qr_scan,0,India,India,0,0,0,2066,keyboard,0,HDFC,0,none
+TXN0077,user_013,1252.27,GoIbibo,2025-12-29 10:23:58,10,49,qr_scan,0,India,India,0,0,0,2674,keyboard,0,SBI,0,none
+TXN0133,user_041,216.79,PVR Cinemas,2025-12-29 11:15:58,11,37,direct_upi,0,India,India,0,0,0,1880,keyboard,0,HDFC,0,none
+TXN0090,user_003,4507.94,Central,2025-12-29 14:54:58,14,49,qr_scan,0,India,India,0,0,0,2529,keyboard,0,HDFC,0,none
+TXN0050,user_032,376.68,BookMyShow,2025-12-29 23:53:58,23,45,qr_scan,0,India,India,0,0,0,2396,keyboard,0,SBI,0,none
+TXN0091,user_044,127.98,PVR Cinemas,2025-12-30 05:35:58,5,82,direct_upi,0,India,India,0,0,0,2005,keyboard,0,SBI,0,none
+TXN0076,user_017,1800.61,Max Fashion,2025-12-30 07:43:58,7,45,qr_scan,0,India,India,0,0,0,1844,keyboard,0,HDFC,0,none
+TXN0082,user_004,545.75,GoIbibo,2025-12-30 23:31:58,23,42,qr_scan,0,India,India,0,0,0,1733,keyboard,0,SBI,0,none
+TXN0102,user_021,1254.7,BookMyShow,2025-12-30 23:56:58,23,49,link,0,India,India,0,0,0,2427,keyboard,0,HDFC,0,none
+TXN0068,user_006,4890.86,RedBus,2025-12-31 01:32:58,1,32,qr_scan,0,India,India,0,0,0,2551,keyboard,0,SBI,0,none
+TXN0137,user_011,271.68,GoIbibo,2025-12-31 10:34:58,10,35,link,0,India,India,0,0,0,2204,keyboard,0,SBI,0,none
+TXN0030,user_033,1045.44,Grofers,2026-01-01 03:18:58,3,45,qr_scan,0,India,India,0,0,0,2205,keyboard,0,HDFC,0,none
+TXN0112,user_001,103.17,Shoppers Stop,2026-01-01 08:22:58,8,45,direct_upi,0,India,India,0,0,0,2787,keyboard,0,SBI,0,none
+TXN0096,user_048,521.59,PVR Cinemas,2026-01-02 00:14:58,0,41,qr_scan,0,India,India,0,0,0,2068,keyboard,0,HDFC,0,none
+TXN0070,user_017,126.27,Tanishq,2026-01-02 07:53:58,7,45,direct_upi,0,India,India,0,0,0,2165,keyboard,0,HDFC,0,none
+TXN0005,user_030,176.42,IKEA,2026-01-02 08:35:58,8,27,link,0,India,India,0,0,0,1619,keyboard,0,SBI,0,none
+TXN0139,user_036,342.14,BigBasket,2026-01-02 19:41:58,19,59,qr_scan,0,India,India,0,0,0,2698,keyboard,0,HDFC,0,none
+TXN0124,user_023,181.94,Uber,2026-01-03 04:03:58,4,36,qr_scan,0,India,India,0,0,0,2443,keyboard,0,HDFC,0,none
+TXN0140,user_030,1943.26,HomeCenter,2026-01-03 06:19:58,6,27,direct_upi,0,India,India,0,0,0,2797,keyboard,0,SBI,0,none
+TXN0048,user_027,91.9,Urban Ladder,2026-01-04 03:33:58,3,45,qr_scan,0,India,India,0,0,0,1640,keyboard,0,SBI,0,none
+TXN0130,user_016,87.85,Ajio,2026-01-04 04:12:58,4,37,qr_scan,0,India,India,0,0,0,2204,keyboard,0,HDFC,0,none
+TXN0131,user_043,419.84,Swiggy,2026-01-04 04:53:58,4,25,qr_scan,0,India,India,0,0,0,1700,keyboard,0,SBI,0,none
+TXN0149,user_004,329.06,Dominos,2026-01-04 08:53:58,8,42,link,0,India,India,0,0,0,2531,keyboard,0,HDFC,0,none
+TXN0067,user_030,467.74,Max Fashion,2026-01-05 00:28:58,0,27,qr_scan,0,India,India,0,0,0,2260,keyboard,0,HDFC,0,none
+TXN0107,user_036,3158.31,KFC,2026-01-05 02:41:58,2,59,link,0,India,India,0,0,0,1832,keyboard,0,SBI,0,none
+TXN0147,user_040,1851.74,Amazon,2026-01-05 03:53:58,3,38,direct_upi,0,India,India,0,0,0,2044,keyboard,0,SBI,0,none
+TXN0047,user_027,1332.8,Bata,2026-01-05 04:57:58,4,45,qr_scan,0,India,India,0,0,0,1727,keyboard,0,HDFC,0,none
+TXN0053,user_042,513.8,MakeMyTrip,2026-01-05 08:44:58,8,41,qr_scan,0,India,India,0,0,0,2132,keyboard,0,SBI,0,none
+TXN0031,user_013,2755.35,FirstCry,2026-01-05 11:18:58,11,49,direct_upi,0,India,India,0,0,0,1956,keyboard,0,SBI,0,none
+TXN0138,user_008,75.34,Uber,2026-01-05 12:40:58,12,63,direct_upi,0,India,India,0,0,0,2062,keyboard,0,SBI,0,none
+TXN0008,user_011,416.96,Bata,2026-01-05 22:29:58,22,35,direct_upi,0,India,India,0,0,0,2683,keyboard,0,HDFC,0,none
+TXN0128,user_005,3052.75,Puma,2026-01-06 00:58:58,0,26,qr_scan,0,India,India,0,0,0,2468,keyboard,0,SBI,0,none
+TXN0014,user_048,370.96,Central,2026-01-06 02:11:58,2,41,qr_scan,0,India,India,0,0,0,1619,keyboard,0,HDFC,0,none
+TXN0113,user_010,1816.21,GoIbibo,2026-01-06 05:10:58,5,46,qr_scan,0,India,India,0,0,0,2730,keyboard,0,SBI,0,none
+TXN0034,user_033,458.72,HomeCenter,2026-01-06 18:26:58,18,45,qr_scan,0,India,India,0,0,0,1773,keyboard,0,SBI,0,none
+TXN0119,user_005,456.15,PVR Cinemas,2026-01-07 06:26:58,6,26,qr_scan,0,India,India,0,0,0,2414,keyboard,0,HDFC,0,none
+TXN0040,user_045,68.35,Flipkart,2026-01-08 00:05:58,0,35,qr_scan,0,India,India,0,0,0,1848,keyboard,0,SBI,0,none
+TXN0117,user_009,468.84,Myntra,2026-01-08 07:13:58,7,64,direct_upi,0,India,India,0,0,0,2501,keyboard,0,HDFC,0,none
+TXN0092,user_008,297.15,Spencer,2026-01-08 20:50:58,20,63,qr_scan,0,India,India,0,0,0,2144,keyboard,0,HDFC,0,none
+TXN0032,user_026,178.18,Swiggy,2026-01-09 02:29:58,2,51,qr_scan,0,India,India,0,0,0,2030,keyboard,0,SBI,0,none
+TXN0052,user_040,122.73,BigBasket,2026-01-09 03:37:58,3,38,qr_scan,0,India,India,0,0,0,1655,keyboard,0,HDFC,0,none
+TXN0105,user_018,3726.42,Croma,2026-01-09 03:44:58,3,36,qr_scan,0,India,India,0,0,0,2592,keyboard,0,HDFC,0,none
+TXN0095,user_033,161.48,RedBus,2026-01-09 04:07:58,4,45,qr_scan,0,India,India,0,0,0,1681,keyboard,0,SBI,0,none
+TXN0075,user_048,182.12,Ajio,2026-01-09 04:57:58,4,41,direct_upi,0,India,India,0,0,0,2154,keyboard,0,SBI,0,none
+TXN0081,user_001,294.19,GoIbibo,2026-01-09 15:54:58,15,45,qr_scan,0,India,India,0,0,0,2297,keyboard,0,HDFC,0,none
+TXN0061,user_007,3893.42,Shoppers Stop,2026-01-10 00:37:58,0,42,qr_scan,0,India,India,0,0,0,2368,keyboard,0,SBI,0,none
+TXN0016,user_024,1141.31,Uber,2026-01-10 02:11:58,2,45,qr_scan,0,India,India,0,0,0,1685,keyboard,0,SBI,0,none
+TXN0006,user_040,410.99,BigBazaar,2026-01-10 02:42:58,2,38,qr_scan,0,India,India,0,0,0,2636,keyboard,0,SBI,0,none
+TXN0074,user_043,1545.52,GoIbibo,2026-01-10 08:59:58,8,25,qr_scan,0,India,India,0,0,0,2304,keyboard,0,SBI,0,none
+TXN0033,user_038,1254.02,Pantaloons,2026-01-10 16:17:58,16,27,qr_scan,0,India,India,0,0,0,2505,keyboard,0,HDFC,0,none
+TXN0085,user_039,628.02,Kalyan Jewellers,2026-01-10 22:26:58,22,50,qr_scan,0,India,India,0,0,0,2670,keyboard,0,SBI,0,none
+TXN0060,user_011,487.85,HomeCenter,2026-01-10 23:14:58,23,35,direct_upi,0,India,India,0,0,0,1935,keyboard,0,SBI,0,none
+TXN0087,user_037,1963.78,Kalyan Jewellers,2026-01-11 03:39:58,3,32,link,0,India,India,0,0,0,1803,keyboard,0,HDFC,0,none
+TXN0011,user_019,996.35,Central,2026-01-11 08:49:58,8,27,qr_scan,0,India,India,0,0,0,2140,keyboard,0,SBI,0,none
+TXN0064,user_033,921.16,Swiggy,2026-01-11 21:57:58,21,45,direct_upi,0,India,India,0,0,0,2603,keyboard,0,HDFC,0,none
+TXN0106,user_002,1187.38,Starbucks,2026-01-12 01:14:58,1,73,direct_upi,0,India,India,0,0,0,2236,keyboard,0,HDFC,0,none
+TXN0024,user_023,17689.28,Westside,2026-01-12 03:08:58,3,36,qr_scan,0,China,UK,1,0,1,1656,keyboard,0,HDFC,1,location_spoof
+TXN0134,user_041,4958.0,Shoppers Stop,2026-01-12 07:38:58,7,37,direct_upi,0,India,India,0,0,0,1668,keyboard,0,SBI,0,none
+TXN0098,user_034,1211.26,MedPlus,2026-01-12 09:04:58,9,69,qr_scan,0,India,India,0,0,0,2798,keyboard,0,SBI,0,none
+TXN0108,user_008,2587.37,Uber,2026-01-12 11:29:58,11,63,qr_scan,0,India,India,0,0,0,2197,keyboard,0,SBI,0,none
+TXN0003,user_027,70.35,Adidas,2026-01-12 19:13:58,19,45,qr_scan,0,India,India,0,0,0,2134,keyboard,0,HDFC,0,none
+TXN0097,user_049,68.33,MedPlus,2026-01-12 20:28:58,20,34,qr_scan,0,India,India,0,0,0,1958,keyboard,0,SBI,0,none
+TXN0100,user_021,229.33,PayTM Mall,2026-01-12 20:42:58,20,49,qr_scan,0,India,India,0,0,0,2614,keyboard,0,SBI,0,none
+TXN0035,user_033,270.25,Kalyan Jewellers,2026-01-12 22:16:58,22,45,qr_scan,0,India,India,0,0,0,2081,keyboard,0,SBI,0,none
+TXN0023,user_002,451.65,BigBasket,2026-01-13 06:48:58,6,73,qr_scan,0,India,India,0,0,0,1742,keyboard,0,SBI,0,none
+TXN0051,user_043,4339.63,BigBasket,2026-01-13 09:27:58,9,25,direct_upi,0,India,India,0,0,0,2557,keyboard,0,HDFC,0,none
+TXN0116,user_025,217.41,Spencer,2026-01-13 11:26:58,11,30,link,0,India,India,0,0,0,2614,keyboard,0,HDFC,0,none
+TXN0045,user_005,101.06,Starbucks,2026-01-13 20:54:58,20,26,qr_scan,0,India,India,0,0,0,2254,keyboard,0,HDFC,0,none
+TXN0004,user_043,172.11,Starbucks,2026-01-13 23:56:58,23,25,qr_scan,0,India,India,0,0,0,1868,keyboard,0,SBI,0,none
+TXN0038,user_046,1450.29,Cleartrip,2026-01-14 00:00:58,0,51,qr_scan,0,India,India,0,0,0,1902,keyboard,0,HDFC,0,none
+TXN0079,user_001,3013.99,Ola,2026-01-14 07:10:58,7,45,qr_scan,0,India,India,0,0,0,1711,keyboard,0,SBI,0,none
+TXN0123,user_011,3720.31,Zomato,2026-01-14 09:55:58,9,35,qr_scan,0,India,India,0,0,0,1714,keyboard,0,SBI,0,none
+TXN0043,user_011,761.55,GoIbibo,2026-01-14 22:31:58,22,35,qr_scan,0,India,India,0,0,0,2106,keyboard,0,SBI,0,none
+TXN0146,user_038,1181.81,Uber,2026-01-15 04:22:58,4,27,direct_upi,0,India,India,0,0,0,1802,keyboard,0,SBI,0,none
+TXN0056,user_002,370.48,Flipkart,2026-01-15 05:10:58,5,73,link,0,India,India,0,0,0,2316,keyboard,0,HDFC,0,none
+TXN0104,user_040,539.77,More Supermarket,2026-01-15 18:07:58,18,38,qr_scan,0,India,India,0,0,0,1705,keyboard,0,HDFC,0,none
+TXN0111,user_018,534.91,Grofers,2026-01-16 00:26:58,0,36,qr_scan,0,India,India,0,0,0,2639,keyboard,0,SBI,0,none
+TXN0072,user_036,326.75,Lifestyle,2026-01-16 02:51:58,2,59,qr_scan,0,India,India,0,0,0,2605,keyboard,0,SBI,0,none
+TXN0044,user_050,471.53,Cleartrip,2026-01-16 05:09:58,5,31,direct_upi,0,India,India,0,0,0,2162,keyboard,0,SBI,0,none
+TXN0132,user_019,88.18,KFC,2026-01-16 05:27:58,5,27,direct_upi,0,India,India,0,0,0,2321,keyboard,0,HDFC,0,none
+TXN0026,user_047,418.11,BookMyShow,2026-01-16 21:56:58,21,33,direct_upi,0,India,India,0,0,0,2647,keyboard,0,HDFC,0,none
+TXN0021,user_011,468.36,Apollo Pharmacy,2026-01-16 23:20:58,23,35,qr_scan,0,India,India,0,0,0,1679,keyboard,0,SBI,0,none
+TXN0063,user_037,1238.78,Ajio,2026-01-17 01:38:58,1,32,qr_scan,0,India,India,0,0,0,2358,keyboard,0,HDFC,0,none
+TXN0041,user_009,524.88,FabIndia,2026-01-17 04:05:58,4,64,qr_scan,0,India,India,0,0,0,2744,keyboard,0,SBI,0,none
+TXN0036,user_015,352.46,Uber,2026-01-17 10:48:58,10,39,qr_scan,0,India,India,0,0,0,2101,keyboard,0,SBI,0,none
+TXN0109,user_027,58.2,GoIbibo,2026-01-17 18:06:58,18,45,qr_scan,0,India,India,0,0,0,2728,keyboard,0,HDFC,0,none
+TXN0099,user_041,263.06,DMart,2026-01-17 20:07:58,20,37,qr_scan,0,India,India,0,0,0,2436,keyboard,0,SBI,0,none
+TXN0058,user_013,1486.42,Kalyan Jewellers,2026-01-18 04:37:58,4,49,qr_scan,0,India,India,0,0,0,1858,keyboard,0,SBI,0,none
+TXN0009,user_043,1656.91,Shoppers Stop,2026-01-18 05:11:58,5,25,link,0,India,India,0,0,0,1812,keyboard,0,HDFC,0,none
+TXN0078,user_007,1552.95,Croma,2026-01-18 06:48:58,6,42,qr_scan,0,India,India,0,0,0,1967,keyboard,0,SBI,0,none
+TXN0143,user_041,451.01,Lifestyle,2026-01-18 11:05:58,11,37,qr_scan,0,India,India,0,0,0,2436,keyboard,0,HDFC,0,none
+TXN0129,user_030,392.68,Dominos,2026-01-18 19:55:58,19,27,link,0,India,India,0,0,0,2589,keyboard,0,HDFC,0,none
+TXN0115,user_015,1710.25,Grofers,2026-01-18 21:25:58,21,39,qr_scan,0,India,India,0,0,0,2568,keyboard,0,SBI,0,none
+TXN0120,user_022,980.07,Bata,2026-01-19 02:19:58,2,45,qr_scan,0,India,India,0,0,0,2248,keyboard,0,SBI,0,none
+TXN0039,user_049,425.89,Apollo Pharmacy,2026-01-19 03:25:58,3,34,direct_upi,0,India,India,0,0,0,2048,keyboard,0,HDFC,0,none
+TXN0037,user_040,377.7,BigBazaar,2026-01-19 07:25:58,7,38,qr_scan,0,India,India,0,0,0,2778,keyboard,0,HDFC,0,none
+TXN0103,user_043,744.4,MakeMyTrip,2026-01-19 09:10:58,9,25,qr_scan,0,India,India,0,0,0,1984,keyboard,0,SBI,0,none
+TXN0019,user_016,234.67,Reliance Digital,2026-01-19 09:46:58,9,37,direct_upi,0,India,India,0,0,0,1650,keyboard,0,HDFC,0,none
+TXN0017,user_024,64.14,Amazon,2026-01-19 15:35:58,15,45,direct_upi,0,India,India,0,0,0,2030,keyboard,0,HDFC,0,none
+TXN0012,user_017,196.33,Flipkart,2026-01-19 18:34:58,18,45,qr_scan,0,India,India,0,0,0,2467,keyboard,0,SBI,0,none
+TXN0142,user_040,2036.46,Pantaloons,2026-01-19 22:11:58,22,38,link,0,India,India,0,0,0,2053,keyboard,0,HDFC,0,none
+TXN0042,user_049,30184.05,Paytm Support,2026-01-20 02:04:58,2,34,sms,1,India,India,0,0,0,2922,keyboard,0,SBI,1,high_amount
+TXN0145,user_016,3569.29,Ola,2026-01-20 03:10:58,3,37,qr_scan,0,India,India,0,0,0,2359,keyboard,0,SBI,0,none
+TXN0027,user_025,279.84,Dominos,2026-01-20 09:12:58,9,30,qr_scan,0,India,India,0,0,0,2493,keyboard,0,HDFC,0,none
+TXN0086,user_029,1310.95,Shoppers Stop,2026-01-20 18:04:58,18,26,direct_upi,0,India,India,0,0,0,2478,keyboard,0,SBI,0,none
+TXN0007,user_009,4316.73,BigBazaar,2026-01-20 18:58:58,18,64,direct_upi,0,India,India,0,0,0,2356,keyboard,0,SBI,0,none
+TXN0028,user_034,103.94,Bata,2026-01-21 01:27:58,1,69,direct_upi,0,India,India,0,0,0,2003,keyboard,0,SBI,0,none
+TXN0114,user_030,923.05,Dominos,2026-01-21 05:56:58,5,27,link,0,India,India,0,0,0,2089,keyboard,0,SBI,0,none
+TXN0020,user_048,84.64,Grofers,2026-01-21 05:57:58,5,41,direct_upi,0,India,India,0,0,0,2108,keyboard,0,SBI,0,none
+TXN0118,user_034,387.89,Swiggy,2026-01-21 09:05:58,9,69,direct_upi,0,India,India,0,0,0,2439,keyboard,0,HDFC,0,none
+TXN0065,user_028,765.67,More Supermarket,2026-01-21 13:59:58,13,35,direct_upi,0,India,India,0,0,0,2541,keyboard,0,HDFC,0,none
+TXN0148,user_029,477.69,Nykaa,2026-01-21 16:51:58,16,26,qr_scan,0,India,India,0,0,0,2352,keyboard,0,SBI,0,none
+TXN0084,user_037,1654.99,DMart,2026-01-21 20:55:58,20,32,link,0,India,India,0,0,0,1842,keyboard,0,SBI,0,none
+TXN0055,user_049,1537.84,Grofers,2026-01-21 21:29:58,21,34,qr_scan,0,India,India,0,0,0,1767,keyboard,0,SBI,0,none
+TXN0080,user_045,310.23,More Supermarket,2026-01-21 23:44:58,23,35,direct_upi,0,India,India,0,0,0,2605,keyboard,0,HDFC,0,none
+TXN0141,user_041,440.87,Apollo Pharmacy,2026-01-21 23:59:58,23,37,direct_upi,0,India,India,0,0,0,2565,keyboard,0,HDFC,0,none
+TXN0071,user_034,4088.09,DMart,2026-01-22 02:48:58,2,69,qr_scan,0,India,India,0,0,0,2432,keyboard,0,SBI,0,none
+TXN0101,user_043,567.96,IKEA,2026-01-22 04:01:58,4,25,qr_scan,0,India,India,0,0,0,2531,keyboard,0,HDFC,0,none
+TXN0015,user_005,1656.45,Lifestyle,2026-01-22 07:32:58,7,26,link,0,India,India,0,0,0,2717,keyboard,0,HDFC,0,none
+TXN0002,user_008,1882.81,Adidas,2026-01-22 09:32:58,9,63,qr_scan,0,India,India,0,0,0,1681,keyboard,0,HDFC,0,none
