@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DCB Merchant Portal - UPIRakshak</title>
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <style>
+        body { background-color: #fff5f0; font-family: 'Verdana', sans-serif; margin: 0; color: #333; }
+        .navbar { background-color: #ea580c; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .container { padding: 40px; max-width: 1200px; margin: 0 auto; }
+        .card { background: white; padding: 25px; border-top: 4px solid #ea580c; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th { background: #333; color: white; text-align: left; padding: 15px; font-size: 0.9rem; }
+        td { padding: 15px; border-bottom: 1px solid #eee; font-size: 0.9rem; }
+        
+        .badge { padding: 6px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: bold; display: inline-block; }
+        .badge-credit { background: #dcfce7; color: #166534; }
+        .badge-blocked { background: #fee2e2; color: #991b1b; }
+
+        /* Status Indicator */
+        .status-light { height: 12px; width: 12px; background-color: #ccc; border-radius: 50%; display: inline-block; margin-right: 8px; }
+        .status-connected { background-color: #00cc00; box-shadow: 0 0 10px #00cc00; } 
+        .status-disconnected { background-color: #cc0000; }
+
+        /* Animation for new rows */
+        @keyframes flash {
+            0% { background-color: #ffedd5; }
+            100% { background-color: white; }
+        }
+        .new-tx-row { animation: flash 2s ease-out; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div style="font-size: 1.5rem; font-weight: bold;">DCB BANK <span style="font-size:0.8rem; font-weight:normal;">| MERCHANT SERVICES</span></div>
+        
+        <div style="display:flex; align-items:center; font-size:0.8rem;">
+            <span id="magic-light" class="status-light"></span> 
+            <span id="magic-text">Connecting...</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2 style="color:#ea580c; border-bottom: 1px solid #ddd; padding-bottom: 15px;">INCOMING TRANSACTIONS (LIVE)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>TXN REF</th>
+                        <th>TIME</th>
+                        <th>REMITTER (BANK)</th>
+                        <th>AMOUNT</th>
+                        <th>AI VERDICT</th>
+                    </tr>
+                </thead>
+                <tbody id="dcb-ledger">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // Connecting to the Flask server
+        const socket = io.connect(window.location.origin);
+        const ledgerBody = document.getElementById('dcb-ledger');
+        const magicLight = document.getElementById('magic-light');
+        const magicText = document.getElementById('magic-text');
+
+        // 1. Connection Monitoring
+        socket.on('connect', () => {
+            magicLight.className = "status-light status-connected";
+            magicText.innerText = "UPIRAKSHAK SECURED";
+        });
+
+        socket.on('disconnect', () => {
+            magicLight.className = "status-light status-disconnected";
+            magicText.innerText = "OFFLINE";
+        });
+
+        // 2. Main Transaction Listener (Changed to 'update_ledger' to match app.py)
+        socket.on('update_ledger', function(tx) {
+            console.log("Processing Data for DCB:", tx);
+
+            // Filter: Only show if DCB is the sender or receiver
+            if(tx.sender_bank === 'DCB' || tx.receiver_bank === 'DCB') {
+                const isApproved = tx.verdict === 'APPROVED';
+                
+                const row = document.createElement('tr');
+                row.className = "new-tx-row";
+                
+                row.innerHTML = `
+                    <td><code>${tx.id}</code></td>
+                    <td>${tx.time}</td>
+                    <td><strong>${tx.sender}</strong> <br><small class="text-muted">${tx.sender_bank}</small></td>
+                    <td style="font-weight:bold; color: ${isApproved ? '#166534' : '#333'}">₹${tx.amount.toLocaleString()}</td>
+                    <td>
+                        <span class="badge ${isApproved ? 'badge-credit' : 'badge-blocked'}">
+                            ${isApproved ? 'CREDITED' : 'BLOCKED'}
+                        </span>
+                    </td>
+                `;
+                
+                // Prepend to show the latest transaction at the top
+                ledgerBody.insertBefore(row, ledgerBody.firstChild);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+name: upiapp
+description: "A new Flutter project for UPI Intents."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  
+  flutter:
+    sdk: flutter
+  permission_handler: ^11.3.0
+  geolocator: ^11.0.0
+  mobile_scanner: ^5.0.0
+  app_links: ^6.0.0
+  http: ^1.2.0
+  supabase_flutter: ^2.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true

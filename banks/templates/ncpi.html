@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NCPI SafeGuard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <style>
+        body { background-color: #0f172a; color: white; font-family: 'Segoe UI', sans-serif; margin: 0; }
+        .container { padding: 20px; max-width: 1400px; margin: 0 auto; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 30px; }
+        .card { background: #1e293b; padding: 20px; border-radius: 12px; border: 1px solid #334155; }
+        .card h1 { margin: 0; font-size: 2rem; }
+        
+        /* UPDATED TABLE STYLES */
+        table { width: 100%; border-collapse: collapse; background: #1e293b; border-radius: 12px; overflow: hidden; }
+        th { background: #0f172a; padding: 15px; text-align: left; color: #94a3b8; font-size: 0.85rem; text-transform: uppercase; }
+        td { padding: 15px; border-bottom: 1px solid #334155; vertical-align: middle; }
+        
+        .bank-tag { display: block; font-size: 0.75rem; color: #64748b; font-weight: bold; margin-top: 4px; }
+        .badge { padding: 5px 10px; border-radius: 6px; font-size: 0.8rem; font-weight: bold; }
+        .badge-green { background: #064e3b; color: #34d399; border: 1px solid #059669; }
+        .badge-red { background: #450a0a; color: #fca5a5; border: 1px solid #dc2626; }
+        
+        /* POPUP STYLES */
+        .overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 999; align-items: center; justify-content: center; }
+        .bank-window { width: 70%; background: #0f172a; border-radius: 15px; border: 2px solid #334155; padding: 20px; animation: popIn 0.3s forwards; }
+        @keyframes popIn { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+        .theme-blue { color: #60a5fa; border-color: #1e3a8a; }
+        .theme-orange { color: #fb923c; border-color: #9a3412; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2 style="margin:0;">NCPI SENTINEL</h2>
+            <span style="background:#ef4444; padding:5px 15px; border-radius:20px; font-size:0.8rem; font-weight:bold;">● LIVE MONITORING</span>
+        </div>
+
+        <div class="stats-grid">
+            <div class="card"><h3>TOTAL VOLUME</h3><h1>₹12.5L</h1></div>
+            <div class="card"><h3>TRANSACTIONS</h3><h1 id="tx-count">0</h1></div>
+            <div class="card"><h3>FLAGGED FRAUD</h3><h1 style="color:#f87171" id="fraud-count">0</h1></div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Sender Bank</th> <th>Receiver Bank</th> <th>Location</th> <th>Amount</th>
+                    <th>Verdict</th>
+                </tr>
+            </thead>
+            <tbody id="ncpi-table"></tbody>
+        </table>
+    </div>
+
+    <div id="overlay" class="overlay">
+        <div class="bank-window" id="bank-window">
+            <h2 id="bank-title">BANK DASHBOARD</h2>
+            <div style="text-align:center; padding:20px;">
+                <h1 id="popup-amount" style="font-size:3rem;">--</h1>
+                <h3 id="popup-status">Processing...</h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const socket = io();
+        const tableBody = document.getElementById('ncpi-table');
+        const overlay = document.getElementById('overlay');
+        const bankWindow = document.getElementById('bank-window');
+        const bankTitle = document.getElementById('bank-title');
+        const popupAmount = document.getElementById('popup-amount');
+        const popupStatus = document.getElementById('popup-status');
+
+        // 1. POPUP ANIMATION
+        socket.on('open_bank_dashboard', function(data) {
+            overlay.style.display = 'flex';
+            bankTitle.innerText = data.bank_name + " DASHBOARD VIEW";
+            popupAmount.innerText = "₹" + data.tx_details.amount;
+            popupStatus.innerText = data.tx_details.status;
+            
+            // Set Color Theme
+            if (data.color_theme === 'blue') {
+                bankWindow.style.borderColor = '#1e3a8a';
+                bankTitle.style.color = '#60a5fa';
+            } else {
+                bankWindow.style.borderColor = '#ea580c';
+                bankTitle.style.color = '#fb923c';
+            }
+        });
+
+        socket.on('close_bank_dashboard', function() {
+            overlay.style.display = 'none';
+        });
+
+        // 2. UPDATE MAIN TABLE (With Bank Names & Location)
+        socket.on('update_ncpi_table', function(tx) {
+            const row = document.createElement('tr');
+            const badgeClass = tx.verdict === 'APPROVED' ? 'badge-green' : 'badge-red';
+            
+            row.innerHTML = `
+                <td>${tx.time}</td>
+                <td>
+                    Jury User
+                    <span class="bank-tag">${tx.sender_bank}</span>
+                </td>
+                <td>
+                    Merchant
+                    <span class="bank-tag">${tx.receiver_bank}</span>
+                </td>
+                <td>${tx.location}</td>
+                <td>₹${tx.amount}</td>
+                <td><span class="badge ${badgeClass}">${tx.verdict}</span></td>
+            `;
+            tableBody.prepend(row);
+            
+            
+            // Update Counters
+            document.getElementById('tx-count').innerText = parseInt(document.getElementById('tx-count').innerText) + 1;
+            if(tx.verdict !== 'APPROVED') {
+                 document.getElementById('fraud-count').innerText = parseInt(document.getElementById('fraud-count').innerText) + 1;
+            }
+        });
+    </script>
+</body>
+</html>
